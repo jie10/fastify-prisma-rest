@@ -14,3 +14,11 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)
 
 </div>
+
+### Installation
+
+Copy repo to your local directory:
+
+```
+git clone https://github.com/jie10/fastify-prisma-rest.git
+```
