@@ -15,10 +15,28 @@
 
 </div>
 
-### Installation
+## Installation
 
-* Copy repo to your local directory:
+1. Copy repo to your local directory:
 ```
 git clone https://github.com/jie10/fastify-prisma-rest.git
 ```
+2. Go to your clone repo
+```
+cd fastify-prisma-rest
+```
+3. Install `package.json` dependencies
+```
+npm install
+```
+## Update dependencies 
 
+> This is optional
+1. To update all `package.json` dependencies
+```
+npx npm-check-updates -u
+```
+2. Install all dependencies
+```
+npm install
+```
