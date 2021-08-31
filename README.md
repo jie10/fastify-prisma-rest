@@ -60,3 +60,14 @@ datasource db {
 ```
 > You can change db provider mongodb, mysql, etc..
 > Note: visit [Prisma ORM](https://www.prisma.io/) to view supported databases.
+3. Database migration:
+```
+npx prisma migrate dev --name init
+```
+> To migrate database
+4. Reset migration:
+> This is optional.
+```
+npx prisma migrate reset
+```
+> Note: you can't delete all data table manually on phpmyadmin.
