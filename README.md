@@ -1,0 +1,2 @@
+# fastify-prisma-rest
+ 
