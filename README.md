@@ -70,4 +70,4 @@ npx prisma migrate dev --name init
 ```
 npx prisma migrate reset
 ```
-> Note: you can't delete all data table manually on phpmyadmin.
+> Note: you can't `delete/empty` all data table manually on phpmyadmin.
