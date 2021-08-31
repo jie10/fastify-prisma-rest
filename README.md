@@ -21,22 +21,41 @@
 ```
 git clone https://github.com/jie10/fastify-prisma-rest.git
 ```
-2. Go to your clone repo
+2. Go to your clone repo:
 ```
 cd fastify-prisma-rest
 ```
-3. Install `package.json` dependencies
+3. Install `package.json` dependencies:
 ```
 npm install
 ```
-## Update dependencies 
+## Update dependencies
 
-> This is optional
-1. To update all `package.json` dependencies
+> This is optional.
+1. To update all `package.json` dependencies:
 ```
 npx npm-check-updates -u
 ```
-2. Install all dependencies
+2. Install all dependencies:
 ```
 npm install
 ```
+## Connect prisma to db
+
+1. Create `.env` file to your root directory:
+> Copy & paste the code below.
+```
+PORT = 3001
+DATABASE_URL="mysql://root:password@localhost:3306/your_db"
+```
+> `PORT` to change your port.
+> `DATABASE_URL` to change your database ex: mongodb, mysql, etc..
+2. Change your db provider:
+```
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+```
+> You can change db provider mongodb, mysql, etc..
+> Note: visit [Prisma ORM](https://www.prisma.io/) to view supported databases.
