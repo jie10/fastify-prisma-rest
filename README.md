@@ -51,6 +51,7 @@ DATABASE_URL="mysql://root:password@localhost:3306/your_db"
 > `PORT` to change your port.
 > `DATABASE_URL` to change your database ex: mongodb, mysql, etc..
 2. Change your db provider:
+> Go to prisma folder > schema.prisma.
 ```
 datasource db {
   provider = "mysql"
